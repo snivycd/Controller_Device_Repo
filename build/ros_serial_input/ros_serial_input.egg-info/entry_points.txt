@@ -1,0 +1,4 @@
+[console_scripts]
+serial_publisher = ros_serial_input.serial_publisher:main
+serial_subscriber = ros_serial_input.serial_subscriber:main
+

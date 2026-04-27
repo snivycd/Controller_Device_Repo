@@ -1,0 +1,18 @@
+[0.621s] Invoking command in '/home/jasper/ros2_serial/build/ros_serial_input': PYTHONPATH=/home/jasper/ros2_serial/build/ros_serial_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jasper/ros2_serial/install/ros_serial_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jasper/ros2_serial/build/ros_serial_input/build --no-deps symlink_data --force
+[0.817s] running develop
+[0.936s] running egg_info
+[0.936s] writing ros_serial_input.egg-info/PKG-INFO
+[0.936s] writing dependency_links to ros_serial_input.egg-info/dependency_links.txt
+[0.936s] writing entry points to ros_serial_input.egg-info/entry_points.txt
+[0.937s] writing requirements to ros_serial_input.egg-info/requires.txt
+[0.937s] writing top-level names to ros_serial_input.egg-info/top_level.txt
+[0.938s] reading manifest file 'ros_serial_input.egg-info/SOURCES.txt'
+[0.939s] writing manifest file 'ros_serial_input.egg-info/SOURCES.txt'
+[0.940s] running build_ext
+[0.940s] Creating /home/jasper/ros2_serial/install/ros_serial_input/lib/python3.10/site-packages/ros-serial-input.egg-link (link to .)
+[0.941s] 
+[0.941s] Installed /home/jasper/ros2_serial/build/ros_serial_input
+[0.941s] running symlink_data
+[0.941s] symbolically linking /home/jasper/ros2_serial/build/ros_serial_input/resource/ros_serial_input -> /home/jasper/ros2_serial/install/ros_serial_input/share/ament_index/resource_index/packages
+[0.942s] symbolically linking /home/jasper/ros2_serial/build/ros_serial_input/package.xml -> /home/jasper/ros2_serial/install/ros_serial_input/share/ros_serial_input
+[0.962s] Invoked command in '/home/jasper/ros2_serial/build/ros_serial_input' returned '0': PYTHONPATH=/home/jasper/ros2_serial/build/ros_serial_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jasper/ros2_serial/install/ros_serial_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jasper/ros2_serial/build/ros_serial_input/build --no-deps symlink_data --force

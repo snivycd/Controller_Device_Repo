@@ -1,0 +1,27 @@
+# Format is TOPICNAME: PIN
+
+UNIT A:
+/A/button1: 3
+/A/button2: 4
+
+
+UNIT B:
+/B/button1: 3
+/B/button2: 4
+/B/button3: 5
+/B/button4: 6
+
+UNIT C:
+/B/button1: 3
+/B/button2: 4
+/B/button3: 5
+/B/button4: 6
+
+UNIT D:
+/D/button1: 3
+/D/button2: 4
+/D/button4: 6
+
+OTHER TOPICS:
+/test1:
+/test2:

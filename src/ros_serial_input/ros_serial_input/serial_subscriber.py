@@ -4,15 +4,20 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+import sys
 
+
+def ask_topic(prompt="Enter topic to subscribe to (default /A/button1): "):
+    """Asking the topic to subscript to"""
+    return input(prompt).strip()
 
 
 class SerialSubscriberNode(Node):
 
-    def __init__(self):
+    def __init__(self, topic):
         super().__init__("serial_subscriber")
         self.cmd_ser_sub_ = self.create_subscription(
-            String, "/A/button1", self.serial_print, 10)
+            String, topic, self.serial_print, 10)
         self.get_logger().info("Script is live!")
 
 
@@ -20,9 +25,9 @@ class SerialSubscriberNode(Node):
         self.get_logger().info(str(msg))
 
 def main(args=None):
-
+    topic = ask_topic()
     rclpy.init(args=args)
-    node = SerialSubscriberNode()
+    node = SerialSubscriberNode(topic)
     rclpy.spin(node)
 
     rclpy.shutdown()

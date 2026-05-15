@@ -63,7 +63,7 @@ class SerialPublisherNode(Node):
 
         # Checks if the serial input is valid
         if serial_input:
-
+            self.get_logger().info(serial_input)
             # Determining which module is being sent
             module_number = serial_processor.FindModule(serial_input)
 
@@ -74,10 +74,9 @@ class SerialPublisherNode(Node):
             for i in range(len(module_data)):
                 pin, topic = module_data[i]
                 if serial_input[pin+1] == '1':
-                    msg = String()
-                    msg.data = '1'
-                    self.publisher_list[topic].publish(msg)
-                    self.get_logger().info("TEST")
+                    to_basestation = String()
+                    to_basestation.data = '1'
+                    self.publisher_list[topic].publish(to_basestation)
                     
 
 

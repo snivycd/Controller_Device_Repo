@@ -7,8 +7,8 @@ from std_msgs.msg import String
 import sys
 
 
-def ask_topic(prompt="Enter topic to subscribe to (default /A/button1): "):
-    """Asking the topic to subscript to"""
+def ask_topic(prompt="Enter topic to subscribe to: "):
+    """Asking which topic to subscribe to"""
     return input(prompt).strip()
 
 

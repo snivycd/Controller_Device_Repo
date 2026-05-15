@@ -12,7 +12,7 @@ class SerialSubscriberNode(Node):
     def __init__(self):
         super().__init__("serial_subscriber")
         self.cmd_ser_sub_ = self.create_subscription(
-            String, "serialOut", self.serial_print, 10)
+            String, "/A/button1", self.serial_print, 10)
         self.get_logger().info("Script is live!")
 
 

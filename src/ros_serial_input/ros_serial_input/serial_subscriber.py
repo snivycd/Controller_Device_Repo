@@ -6,6 +6,8 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import sys
 
+## This is just a test file so I havent added comments
+
 
 def ask_topic(prompt="Enter topic to subscribe to: "):
     """Asking which topic to subscribe to"""

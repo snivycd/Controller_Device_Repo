@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 ## Python program to read serial input from connected modules
-## and publish the output to the "serialOut" node
+## and publish the output to corresponding topics
 ## Author: Jasper Yeend (a1901955)
 ## Date Created: 28.04.2026
-## Last Modified: 9.05.2026
+## Last Modified: 15.05.2026
 
 import rclpy
 import serial, time, os
@@ -20,6 +20,7 @@ from . import serial_processor
 SERIALINPUTS = ['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2', '/dev/ttyACM3', '/dev/ttyACM4']
 ## Note to self: will need to enable serial reading on the Pi for non-root user
 
+# Saves the module info file (modules.txt) within this directory
 module_file = os.path.join(os.path.dirname(__file__), "modules.txt")
 
 # Starting the serial connection

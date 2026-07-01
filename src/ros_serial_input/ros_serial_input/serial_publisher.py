@@ -16,8 +16,8 @@ from . import serial_processor
 ## Note: In current program, only devices connected on initialisation will function.
 ## I will change this when I work out how to do it (potentially with threading).
 
-# Array of serial ports 5 total for 5 possible modules (Assumes all use standard Arduino format /dev/ttyACMx)
-SERIALINPUTS = ['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2', '/dev/ttyACM3', '/dev/ttyACM4']
+# Array of serial ports 5 total for 5 possible modules (Assumes all use standard Pi 4 format /dev/ttyAMAx)
+SERIALINPUTS = ['/dev/ttyAMA0', '/dev/ttyAMA1', '/dev/ttyAMA2', '/dev/ttyAMA3', '/dev/ttyAMA4']
 ## Note to self: will need to enable serial reading on the Pi for non-root user
 
 # Saves the module info file (modules.txt) within this directory
